@@ -33,11 +33,11 @@ python webcv.py --image-dir folder_path --show-mode equal_hw --resize-type equal
 ```
 for detection:
 ```
-python webcv.py --image-dir /home/zgcr/下载/WebCV/image --show-mode equal_h --resize-type retinastyle/yolostyle  --image-size 400 --show-image-num 10
+python webcv.py --image-dir folder_path --show-mode equal_h --resize-type retinastyle/yolostyle  --image-size 400 --show-image-num 10
 ```
 for ocr text recognition:
 ```
-python webcv.py --image-dir /home/zgcr/下载/WebCV/image --show-mode equal_h_right --resize-type keep_ratio_h  --image-size 128 --show-image-num 10
+python webcv.py --image-dir folder_path --show-mode equal_h_right --resize-type keep_ratio_h  --image-size 128 --show-image-num 10
 ```
 
 --image-dir:path for image folder
