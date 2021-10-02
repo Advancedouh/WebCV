@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Show Images</title>
+    <style>
+        /* .image_style {
+            height: 128px;
+            margin: 20px;
+        } */
+        .container {
+            height: 32px;
+            margin: 20px;
+            float: left;
+        }
+
+        .image_style {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    {% for img,name in image_infos %}
+    <div class='container'>
+        <img class='image_style' height='32px' src="data:image/jpeg;base64, {{ img }}">
+        <span style='font-size: 20px;text-align:right'>{{name}}</span>
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>

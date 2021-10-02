@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Show Images</title>
+    <style>
+        .image_style {
+            height: 400px;
+            margin: 40px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!--图片不带标题-->
+    <!-- {% for img,name in image_infos %}
+    <img style="height: 400px;" hspace="40px" vspace="40px" src="data:image/jpeg;base64, {{ img }}">
+    {% endfor %} -->
+
+    <!--图片标题在图片上面-->
+    {% for img,name in image_infos %}
+    <div class='image_style'>
+        <span style='color:white;background-color:black;font-size: 40px;text-align:center;display:block;'>{{
+            name}}</span>
+        <img style="height: 400px;" src="data:image/jpeg;base64, {{ img }}">
+    </div>
+    {% endfor %}
+</body>
+
+</html>
